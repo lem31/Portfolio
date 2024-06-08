@@ -48,6 +48,12 @@ header {
   grid-gap: 2rem;
 }
 
+.hamburger-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -67,6 +73,7 @@ ul li {
   list-style: none;
   text-decoration: none;
   margin-right: 2rem;
+  text-wrap: nowrap;
 }
 
 ul li a {
@@ -159,7 +166,6 @@ h1 {
   border: none;
   border-radius: 5px;
   background-color: #f1f1f1;
-
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -178,12 +184,8 @@ h1 {
   position: relative;
 }
 
-.Status-section {
-  margin-top: -20rem;
-}
-
-.strengths-section {
-  margin-top: -20rem;
+.section {
+  margin-top: -26rem;
 }
 
 .I-enjoy {
@@ -191,17 +193,9 @@ h1 {
   align-items: center;
 }
 
-.motivation-section {
-  margin-top: -20rem;
-}
-
-.Tech-Skills-Section {
-  margin-top: -25rem;
-}
-
 .I-enjoy-box {
   display: flex;
-  width: 60rem;
+  width: 50rem;
   height: 28rem;
   position: absolute;
   justify-content: center;
@@ -209,13 +203,12 @@ h1 {
 }
 
 .I-enjoy-box img {
-  width: 60%;
+  width: fit-content;
   height: 100%;
 }
 
 .dog-img {
   width: 60 rem;
-
   border-radius: 20%;
 }
 
@@ -233,18 +226,30 @@ h1 {
 .x-btn-Tech-Skills,
 .x-btn-Status {
   position: absolute;
-  width: 36rem;
+
   height: 2rem;
   z-index: 999;
   font-weight: bolder;
 }
 
-.x-btn-strengths {
-  width: 50rem;
+.x-btn-strengths,
+.x-btn-motivation,
+.x-btn-Tech-Skills,
+.x-btn-Status {
+  width: 80vw;
 }
 
 .x-btn-1 {
-  width: 24rem;
+  width: 15rem;
+}
+
+.x-btn-2 {
+  width: 39rem;
+}
+
+.x-btn-3,
+.x-btn-4 {
+  width: 42rem;
 }
 
 .Github,
@@ -303,8 +308,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  width: 50rem;
-  height: 20rem;
+  width: 80vw;
+  height: 50vh;
   border: 2px solid black;
   position: absolute;
   z-index: 1;
@@ -315,15 +320,26 @@ footer {
   );
 }
 
+.motivation-box {
+  padding-top: 2rem;
+  height: 55vh;
+}
+
 .Tech-Skills-box {
-  height: 30rem;
+  display: flex;
+  height: 20rem;
   background: white;
+}
+
+.tech-img {
+  width: 80px;
+  height: 80px;
 }
 
 .Status-box {
   display: flex;
-  width: 36rem;
-  height: 20rem;
+  width: 50vw;
+  height: 20vh;
   align-items: center;
   justify-content: center;
   border: 2px solid black;
@@ -334,6 +350,7 @@ footer {
     rgba(34, 193, 195, 1) 36%,
     rgba(253, 187, 45, 1) 75%
   );
+  padding-top: 2rem;
 }
 
 #self-motivated {

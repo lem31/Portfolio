@@ -3,6 +3,7 @@ const h1 = h1Container.querySelector("h1");
 const bioImage = document.querySelector(".bio-img");
 const bioText = document.querySelector(".bio-text");
 const bioWrapper = document.querySelector(".bio-wrapper");
+const btnContainer = document.querySelector(".buttons-container");
 
 //H1 HOME BIO EFFECT
 
@@ -44,6 +45,7 @@ enjoyBtn.addEventListener("click", () => {
   fadeImages();
   enjoySection.style.paddingTop = "4rem";
   footer.style.marginTop = "12rem";
+  btnContainer.style.opacity = "0";
 });
 
 const imgOne = document.getElementById("img-1");
@@ -96,6 +98,7 @@ function closeSection() {
   }
 
   footer.style.marginTop = "0";
+  btnContainer.style.opacity = "1";
 }
 const closeButtons = document.querySelectorAll(".x-btn");
 closeButtons.forEach((closeBtn) => {
@@ -128,7 +131,8 @@ myStrengthsBtn.addEventListener("click", displayMyStrengths);
 
 function displayMyStrengths() {
   strengthsSection.style.display = "flex";
-  footer.style.marginTop = "20rem";
+  footer.style.marginTop = "28rem";
+  btnContainer.style.opacity = "0";
 }
 
 //CLOSE STRENGTHS SECTION FUNCTION
@@ -142,6 +146,7 @@ function closeStrengthsSection() {
     strengthsSection.style.display = "flex";
   }
   footer.style.marginTop = "0";
+  btnContainer.style.opacity = "1";
 }
 
 closeStrengthsBtn.addEventListener("click", closeStrengthsSection);
@@ -155,7 +160,8 @@ motivationBtn.addEventListener("click", displayMotivation);
 
 function displayMotivation() {
   motivationSection.style.display = "flex";
-  footer.style.marginTop = "20rem";
+  footer.style.marginTop = "28rem";
+  btnContainer.style.opacity = "0";
 }
 
 //CLOSE MOTIVATION SECTION FUNCTION
@@ -169,6 +175,7 @@ function closeMotivationSection() {
     motivationSection.style.display = "flex";
   }
   footer.style.marginTop = "0";
+  btnContainer.style.opacity = "1";
 }
 
 closeMotivationBtn.addEventListener("click", closeMotivationSection);
@@ -182,7 +189,8 @@ techSkillsBtn.addEventListener("click", displayTechSkills);
 
 function displayTechSkills() {
   techSkillsSection.style.display = "flex";
-  footer.style.marginTop = "25rem";
+  footer.style.marginTop = "28rem";
+  btnContainer.style.opacity = "0";
 }
 
 //CLOSE TECH SKILLS SECTION FUNCTION
@@ -197,6 +205,7 @@ function closeTechSkillsSection() {
   }
 
   footer.style.marginTop = "0";
+  btnContainer.style.opacity = "1";
 }
 
 closeTechSkillsBtn.addEventListener("click", closeTechSkillsSection);
@@ -210,7 +219,8 @@ statusBtn.addEventListener("click", displayStatus);
 
 function displayStatus() {
   statusSection.style.display = "flex";
-  footer.style.marginTop = "20rem";
+  footer.style.marginTop = "28rem";
+  btnContainer.style.opacity = "0";
 }
 
 //CLOSE STATUS SECTION FUNCTION
@@ -224,6 +234,66 @@ function closeStatusSection() {
     statusSection.style.display = "flex";
   }
   footer.style.marginTop = "0";
+  btnContainer.style.opacity = "1";
 }
 
 closeStatusBtn.addEventListener("click", closeStatusSection);
+
+//DROPDOWN NAV FUNCTION
+
+const hamburger = document.querySelector(".hamburger-icon");
+const navUl = document.querySelector(".nav-ul");
+const nav = document.querySelector("nav");
+const logo = document.querySelector(".My-logo");
+
+window.addEventListener("resize", displayHamburger);
+window.addEventListener("resize", closeNav);
+
+window.addEventListener("load", displayHamburger);
+
+function displayHamburger() {
+  if (window.innerWidth > 750) {
+    hamburger.style.display = "none";
+    nav.style.display = "flex";
+    // nav.style.gridArea = "1/2/3/2";
+    // nav.style.marginTop = "0";
+    // nav.style.marginLeft = "0";
+    logo.style.gridArea = "1/1/1/1";
+    logo.style.justifySelf = "start";
+  } else if (window.innerWidth <= 750) {
+    nav.style.display = "none";
+    hamburger.style.display = "flex";
+    hamburger.style.gridArea = "1/1/2/2";
+    // nav.style.gridArea = "1/1/2/2";
+    // nav.style.marginTop = "12%";
+    // nav.style.marginLeft = "-2rem";
+    logo.style.gridArea = "1/2/2/3";
+    logo.style.justifySelf = "center";
+  } else {
+    hamburger.style.display = "none";
+    nav.style.display = "flex";
+  }
+}
+
+function openNav() {
+  nav.style.display = "block";
+  navUl.style.display = "block";
+}
+
+function closeNav() {
+  if (window.innerWidth <= 750) {
+    nav.style.display = "none";
+    navUl.style.display = "none";
+  } else {
+    nav.style.display = "flex";
+    navUl.style.display = "flex";
+  }
+}
+
+hamburger.addEventListener("click", () => {
+  if (nav.style.display === "block" && navUl.style.display === "block") {
+    closeNav();
+  } else {
+    openNav();
+  }
+});
