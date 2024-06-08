@@ -1,0 +1,463 @@
+/* GLOBAL STYLES */
+
+h1,
+ul li {
+  font-family: "Gugi", sans-serif;
+}
+
+.x-btn,
+.x-btn-strengths,
+.x-btn-motivation,
+.x-btn-Tech-Skills,
+.x-btn-Status,
+.buttons-container button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.buttons-container button,
+ul li {
+  font-size: 18px;
+}
+
+.Project-title {
+  font-size: 30px;
+  text-wrap: nowrap;
+}
+
+ul li,
+.buttons-container button,
+.Project-info h2 {
+  color: black;
+}
+
+/* HOME STYLES */
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 36%,
+    rgba(253, 187, 45, 1) 75%
+  );
+}
+
+/* HOME STYLES */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  width: 40vw;
+  position: relative;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+.My-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.h1-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+}
+
+h1 {
+  text-wrap: wrap;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 2px 2px 2px #faff1b;
+}
+
+.h1 {
+  font-size: 70px;
+  z-index: 1;
+}
+.header-bio-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.bio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 8rem;
+}
+
+.bio-box-img,
+.bio-box-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+
+.bio-box-text {
+  width: 20rem;
+  height: auto;
+}
+
+.bio-box-img {
+  width: 100%;
+  height: auto;
+}
+
+.bio-img {
+  width: 15rem;
+  border-radius: 20%;
+  opacity: 0;
+}
+
+.bio-text {
+  width: 20rem;
+  opacity: 0;
+}
+
+.My-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons-container button {
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.I-enjoy,
+.strengths-section,
+.motivation-section,
+.Tech-Skills-Section,
+.Status-section {
+  display: none;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+.Status-section {
+  margin-top: -20rem;
+}
+
+.strengths-section {
+  margin-top: -20rem;
+}
+
+.I-enjoy {
+  margin-top: -16rem;
+  align-items: center;
+}
+
+.motivation-section {
+  margin-top: -20rem;
+}
+
+.Tech-Skills-Section {
+  margin-top: -25rem;
+}
+
+.I-enjoy-box {
+  display: flex;
+  width: 60rem;
+  height: 28rem;
+  position: absolute;
+  justify-content: center;
+  z-index: 1;
+}
+
+.I-enjoy-box img {
+  width: 60%;
+  height: 100%;
+}
+
+.dog-img {
+  width: 60 rem;
+
+  border-radius: 20%;
+}
+
+.I-enjoy-h2 {
+  font-size: 2rem;
+  position: absolute;
+  margin-top: 5rem;
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 1rem;
+}
+
+.x-btn,
+.x-btn-strengths,
+.x-btn-motivation,
+.x-btn-Tech-Skills,
+.x-btn-Status {
+  position: absolute;
+  width: 36rem;
+  height: 2rem;
+  z-index: 999;
+  font-weight: bolder;
+}
+
+.x-btn-strengths {
+  width: 50rem;
+}
+
+.x-btn-1 {
+  width: 24rem;
+}
+
+.Github,
+.linkedin {
+  width: 80px;
+  height: 80px;
+}
+
+.linkedin:hover,
+.Github:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate3d(1, 1, 1, 90deg);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+.down-arrow-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+  height: 5rem;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+.down-arrow-img {
+  width: 10rem;
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.down-arrow-img.pulsate {
+  animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.strengths-box,
+.motivation-box,
+.Tech-Skills-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 20rem;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 36%,
+    rgba(253, 187, 45, 1) 75%
+  );
+}
+
+.Tech-Skills-box {
+  height: 30rem;
+  background: white;
+}
+
+.Status-box {
+  display: flex;
+  width: 36rem;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 36%,
+    rgba(253, 187, 45, 1) 75%
+  );
+}
+
+#self-motivated {
+  grid-area: 2/2/2/2;
+}
+
+#creative {
+  grid-area: 1/1/1/1;
+}
+
+#good-listener {
+  grid-area: 1/3/1/3;
+}
+
+#love-to-learn {
+  grid-area: 1/2/1/2;
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 25rem;
+}
+
+.project-img,
+.project-video {
+  width: 30rem;
+  height: 20rem;
+  position: absolute;
+}
+
+.project-img {
+  z-index: 1;
+}
+
+.Project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+  width: 55rem;
+}
+
+.Project-info h2,
+.Project-info p {
+  text-align: left;
+  width: 20vw;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.h2-portfolio {
+  display: flex;
+  align-items: center;
+  height: 20rem;
+}
+
+.Project-info a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 860px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 5rem;
+  }
+
+  .Project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .Project-info h2,
+  .Project-info p {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .project-paragraph {
+    text-align: center;
+  }
+
+  .h2-portfolio {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .project-img,
+  .project-video {
+    margin-top: 3rem;
+  }
+}
