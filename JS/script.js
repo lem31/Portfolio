@@ -54,6 +54,11 @@ const imgThree = document.getElementById("img-3");
 const imgFour = document.getElementById("img-4");
 
 function fadeImages() {
+  imgTwo.style.display = "none";
+  imgThree.style.display = "none";
+  imgFour.style.display = "none";
+  imgOne.style.display = "flex";
+
   setTimeout(() => {
     imgTwo.style.display = "none";
     imgThree.style.display = "none";
