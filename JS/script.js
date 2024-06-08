@@ -255,18 +255,18 @@ function displayHamburger() {
   if (window.innerWidth > 750) {
     hamburger.style.display = "none";
     nav.style.display = "flex";
-    // nav.style.gridArea = "1/2/3/2";
-    // nav.style.marginTop = "0";
-    // nav.style.marginLeft = "0";
+    nav.style.gridArea = "1/2/3/2";
+    nav.style.marginTop = "0";
+    nav.style.marginLeft = "0";
     logo.style.gridArea = "1/1/1/1";
     logo.style.justifySelf = "start";
   } else if (window.innerWidth <= 750) {
     nav.style.display = "none";
     hamburger.style.display = "flex";
     hamburger.style.gridArea = "1/1/2/2";
-    // nav.style.gridArea = "1/1/2/2";
-    // nav.style.marginTop = "12%";
-    // nav.style.marginLeft = "-2rem";
+    nav.style.gridArea = "1/1/2/2";
+    nav.style.marginTop = "14%";
+    nav.style.marginLeft = "-2rem";
     logo.style.gridArea = "1/2/2/3";
     logo.style.justifySelf = "center";
   } else {
