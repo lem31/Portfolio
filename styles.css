@@ -22,6 +22,7 @@ ul li {
 .h2-motivation {
   color: white;
   text-shadow: 5px white;
+  text-align: center;
 }
 
 .status-p {
@@ -325,8 +326,8 @@ footer {
 .strengths-box,
 .motivation-box,
 .Tech-Skills-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80vw;
@@ -357,6 +358,7 @@ footer {
 
 .Tech-Skills-box {
   display: flex;
+  flex-direction: row;
   height: 20rem;
   background: white;
   background-image: url("./Images/technology-bg.jpg");
