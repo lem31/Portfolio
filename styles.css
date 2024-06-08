@@ -12,7 +12,9 @@ ul li {
 .x-btn-Status,
 .buttons-container button,
 .h2-strengths,
-.h2-motivation {
+.h2-motivation,
+.status-p,
+.tech-used {
   font-family: "Montserrat", sans-serif;
 }
 

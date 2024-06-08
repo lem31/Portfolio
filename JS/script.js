@@ -54,11 +54,6 @@ const imgThree = document.getElementById("img-3");
 const imgFour = document.getElementById("img-4");
 
 function fadeImages() {
-  imgTwo.style.display = "none";
-  imgThree.style.display = "none";
-  imgFour.style.display = "none";
-  imgOne.style.display = "flex";
-
   setTimeout(() => {
     imgTwo.style.display = "none";
     imgThree.style.display = "none";
@@ -87,7 +82,7 @@ function fadeImages() {
     imgFour.style.display = "flex";
   }, 5000);
 
-  setTimeout(fadeImages, 6000);
+  setTimeout(fadeImages, 8000);
 }
 
 //CLOSE ENJOY SECTION FUNCTION
