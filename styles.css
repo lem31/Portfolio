@@ -430,6 +430,10 @@ footer {
   list-style: none;
 }
 
+.h1-box {
+  padding-bottom: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 860px) {
@@ -478,6 +482,11 @@ footer {
   .project-video {
     margin-top: 3rem;
   }
+
+  .h1-box {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -487,8 +496,8 @@ footer {
     align-items: center;
     position: relative;
     margin-top: 0;
-    width: 25rem;
-    height: auto;
+    width: 22rem;
+    height: 25rem;
   }
 
   .project img,
@@ -510,5 +519,10 @@ footer {
   .linkedin {
     width: 40px;
     height: 40px;
+  }
+
+  .h1-box {
+    padding-top: 2rem;
+    padding-bottom: 0;
   }
 }
