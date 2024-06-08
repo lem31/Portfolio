@@ -408,7 +408,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: end;
-  justify-content: center;
+  justify-content: start;
   position: relative;
   width: 55rem;
   height: 20rem;
@@ -596,6 +596,11 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100vw;
+  }
+
+  .CS-Museum-Project,
+  .Film-Site-Project {
+    margin-top: 15rem;
   }
 
   .project-paragraph {
