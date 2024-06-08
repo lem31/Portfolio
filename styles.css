@@ -327,7 +327,7 @@ footer {
 .motivation-box,
 .Tech-Skills-box {
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
   width: 80vw;
@@ -340,6 +340,11 @@ footer {
     rgba(34, 193, 195, 1) 36%,
     rgba(253, 187, 45, 1) 75%
   );
+}
+
+.strengths-box,
+.motivation-box {
+  flex-direction: column;
 }
 
 .motivation-box {
@@ -357,7 +362,6 @@ footer {
 }
 
 .Tech-Skills-box {
-  display: flex;
   flex-direction: row;
   height: 20rem;
   background: white;
