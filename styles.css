@@ -226,7 +226,6 @@ h1 {
 .x-btn-Tech-Skills,
 .x-btn-Status {
   position: absolute;
-
   height: 2rem;
   z-index: 999;
   font-weight: bolder;
@@ -436,7 +435,50 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 860px) {
+@media (min-width: 601px) and (max-width: 860px) {
+  .strengths-box,
+  .motivation-box {
+    width: 80vw;
+    height: 65vh;
+  }
+
+  .Tech-Skills-box {
+    width: 90vw;
+  }
+
+  .Status-box {
+    height: 30vh;
+  }
+
+  .I-enjoy-box {
+    width: 20rem;
+  }
+
+  .I-enjoy-box img {
+    width: fit-content;
+    height: 80%;
+  }
+
+  .x-btn-1 {
+    width: 15rem;
+  }
+
+  .x-btn-2 {
+    width: 31rem;
+  }
+
+  .x-btn-3,
+  .x-btn-4 {
+    width: 34rem;
+  }
+
+  .x-btn-Tech-Skills {
+    width: 90vw;
+  }
+  .x-btn-Status {
+    width: 50vw;
+  }
+
   .project {
     flex-direction: column;
     justify-content: space-between;
@@ -490,6 +532,80 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .section {
+    margin-top: -23rem;
+  }
+  .I-enjoy {
+    margin-top: -12rem;
+  }
+  .h1-home {
+    text-wrap: wrap;
+  }
+  .buttons-container {
+    margin-top: 2rem;
+  }
+  .bio-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .bio-box-text {
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .bio-img {
+    width: 10rem;
+    border-radius: 20%;
+    opacity: 0;
+  }
+
+  .bio-text {
+    width: 20rem;
+    opacity: 0;
+  }
+
+  .strengths-box,
+  .motivation-box {
+    width: 50vw;
+    height: 65vh;
+  }
+
+  .Tech-Skills-box {
+    width: 90vw;
+  }
+
+  .Status-box {
+    height: 30vh;
+  }
+
+  .I-enjoy-box {
+    width: 20rem;
+  }
+
+  .I-enjoy-box img {
+    width: fit-content;
+    height: 40%;
+  }
+
+  .x-btn-1 {
+    width: 12rem;
+  }
+
+  .x-btn-2 {
+    width: 16rem;
+  }
+
+  .x-btn-3,
+  .x-btn-4 {
+    width: 17rem;
+  }
+
+  .x-btn-Tech-Skills {
+    width: 90vw;
+  }
+  .x-btn-Status {
+    width: 50vw;
+  }
   .project {
     flex-direction: column;
     justify-content: space-between;
