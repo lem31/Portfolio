@@ -41,10 +41,10 @@ const enjoyBtn = document.getElementById("enjoy-btn");
 const footer = document.querySelector("footer");
 
 enjoyBtn.addEventListener("click", () => {
-  enjoySection.style.display = "flex";
   fadeImages();
+  enjoySection.style.display = "flex";
   enjoySection.style.paddingTop = "4rem";
-  footer.style.marginTop = "12rem";
+  footer.style.marginTop = "20rem";
   btnContainer.style.opacity = "0";
 });
 
@@ -55,10 +55,10 @@ const imgFour = document.getElementById("img-4");
 
 function fadeImages() {
   setTimeout(() => {
-    imgOne.style.display = "flex";
     imgTwo.style.display = "none";
     imgThree.style.display = "none";
     imgFour.style.display = "none";
+    imgOne.style.display = "flex";
   }, 2000);
 
   setTimeout(() => {
@@ -82,7 +82,7 @@ function fadeImages() {
     imgFour.style.display = "flex";
   }, 5000);
 
-  setTimeout(fadeImages, 11000);
+  setTimeout(fadeImages, 6000);
 }
 
 //CLOSE ENJOY SECTION FUNCTION
@@ -94,7 +94,6 @@ function closeSection() {
     enjoySection.style.display = "none";
   } else {
     enjoySection.style.display = "flex";
-    clearTimeout(fadeImages);
   }
 
   footer.style.marginTop = "0";

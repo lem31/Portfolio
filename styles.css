@@ -64,6 +64,7 @@ nav {
   width: 40vw;
   position: relative;
   z-index: 1;
+  background: none;
 }
 nav ul {
   display: flex;
@@ -235,9 +236,12 @@ h1 {
 
 .x-btn-strengths,
 .x-btn-motivation,
-.x-btn-Tech-Skills,
-.x-btn-Status {
+.x-btn-Tech-Skills {
   width: 80vw;
+}
+
+.x-btn-Status {
+  width: 50vw;
 }
 
 .x-btn-1 {
@@ -437,7 +441,28 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 601px) and (max-width: 860px) {
+@media (min-width: 601px) and (max-width: 750px) {
+  nav {
+    background: linear-gradient(
+      90deg,
+      rgba(34, 193, 195, 1) 36%,
+      rgba(253, 187, 45, 1) 75%
+    );
+    width: 8rem;
+    z-index: 999;
+  }
+
+  ul li a {
+    z-index: 999;
+  }
+
+  nav ul {
+    z-index: 999;
+  }
+
+  ul li {
+    z-index: 999;
+  }
   .strengths-box,
   .motivation-box {
     width: 80vw;
@@ -531,9 +556,87 @@ footer {
     padding-top: 2rem;
     padding-bottom: 0;
   }
+
+  footer {
+    padding-top: 8rem;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 900px) {
+  .project {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    height: 30rem;
+  }
+
+  .Project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    margin-top: 5rem;
+    width: 100vw;
+    height: 20vh;
+  }
+
+  .Project-info h2,
+  .Project-info p {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .project-paragraph {
+    text-align: center;
+  }
+
+  .h2-portfolio {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .project-img,
+  .project-video {
+    margin-top: 3rem;
+  }
+
+  .h1-box {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 600px) {
+  nav {
+    background: linear-gradient(
+      90deg,
+      rgba(34, 193, 195, 1) 36%,
+      rgba(253, 187, 45, 1) 75%
+    );
+    width: 8rem;
+    z-index: 999;
+  }
+
+  ul li a {
+    z-index: 999;
+  }
+
+  nav ul {
+    z-index: 999;
+  }
+
+  ul li {
+    z-index: 999;
+  }
   .strengths-box,
   .motivation-box {
     display: flex;
@@ -649,16 +752,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin-top: 0;
-    width: 22rem;
-    height: 25rem;
-  }
-
-  .project img,
-  .project video {
-    width: 80%;
-    height: auto;
+    margin-top: 5rem;
+    height: 23rem;
   }
 
   .Project-info {
@@ -667,9 +762,43 @@ footer {
     align-items: center;
     justify-content: start;
     position: relative;
-    height: 10rem;
+    width: 100vw;
+    height: 12vh;
   }
 
+  .Project-info h2,
+  .Project-info p {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .project-paragraph {
+    text-align: center;
+  }
+
+  .h2-portfolio {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .project-img,
+  .project-video {
+    margin-top: 3rem;
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .h1-box {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
   .Github,
   .linkedin {
     width: 40px;
@@ -679,5 +808,9 @@ footer {
   .h1-box {
     padding-top: 2rem;
     padding-bottom: 0;
+  }
+
+  footer {
+    padding-top: 5rem;
   }
 }
