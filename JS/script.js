@@ -82,7 +82,7 @@ function fadeImages() {
     imgFour.style.display = "flex";
   }, 5000);
 
-  setTimeout(fadeImages, 8000);
+  setTimeout(fadeImages, 4000);
 }
 
 //CLOSE ENJOY SECTION FUNCTION
