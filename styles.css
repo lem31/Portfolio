@@ -690,11 +690,6 @@ footer {
   ul li {
     z-index: 999;
   }
-  .strengths-box,
-  .motivation-box {
-    display: flex;
-    flex-direction: column;
-  }
 
   .Tech-Skills-box {
     display: grid;
