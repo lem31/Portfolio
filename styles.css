@@ -10,7 +10,9 @@ ul li {
 .x-btn-motivation,
 .x-btn-Tech-Skills,
 .x-btn-Status,
-.buttons-container button {
+.buttons-container button,
+.h2-strengths,
+.h2-motivation {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -213,7 +215,7 @@ h1 {
 }
 
 .I-enjoy-h2 {
-  font-size: 2rem;
+  font-size: 30px;
   position: absolute;
   margin-top: 5rem;
   background-color: rgba(255, 255, 255, 0.678);
@@ -532,6 +534,43 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .strengths-box,
+  .motivation-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Tech-Skills-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    grid-gap: 0;
+  }
+
+  .Tech-Skills-box img {
+    align-self: center;
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+  }
+  .h2-strengths,
+  .h2-motivation {
+    font-size: 18px;
+    text-align: center;
+  }
+  .I-enjoy-h2 {
+    font-size: 20px;
+  }
+  .dog-img {
+    height: 20rem;
+  }
+
+  #dog-video-h2 {
+    width: 5rem;
+    text-wrap: wrap;
+  }
+
   .section {
     margin-top: -23rem;
   }
@@ -566,7 +605,7 @@ footer {
 
   .strengths-box,
   .motivation-box {
-    width: 50vw;
+    width: 80vw;
     height: 65vh;
   }
 
