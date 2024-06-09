@@ -260,7 +260,7 @@ h1 {
 }
 
 .x-btn-Status {
-  width: 50vw;
+  width: 70vw;
 }
 
 .x-btn-1 {
@@ -378,8 +378,8 @@ footer {
 
 .Status-box {
   display: flex;
-  width: 50vw;
-  height: 20vh;
+  width: 70vw;
+  height: 80vh;
   align-items: center;
   justify-content: center;
   border: 2px solid black;
@@ -512,10 +512,6 @@ footer {
     width: 90vw;
   }
 
-  .Status-box {
-    height: 30vh;
-  }
-
   .I-enjoy-box {
     width: 20rem;
   }
@@ -540,9 +536,6 @@ footer {
 
   .x-btn-Tech-Skills {
     width: 90vw;
-  }
-  .x-btn-Status {
-    width: 50vw;
   }
 
   .project {
@@ -770,10 +763,6 @@ footer {
     width: 90vw;
   }
 
-  .Status-box {
-    height: 30vh;
-  }
-
   .I-enjoy-box {
     width: 20rem;
   }
@@ -799,9 +788,7 @@ footer {
   .x-btn-Tech-Skills {
     width: 90vw;
   }
-  .x-btn-Status {
-    width: 50vw;
-  }
+
   .project {
     flex-direction: column;
     justify-content: space-between;
